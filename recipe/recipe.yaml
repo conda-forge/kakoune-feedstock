@@ -1,6 +1,6 @@
 context:
   name: Kakoune
-  version: "2025.06.03"
+  version: "2026.04.12"
   author: mawww
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/${{ author }}/${{ name|lower }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340
+  sha256: a4089744fa768e3799d53fb369cd13bac1ff45a408d8fb323d09169ad9ab7204
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
 
 tests:
   - script:
-    - kak -ui dummy -e q
+      - kak -ui dummy -e q
 
 about:
   homepage: https://kakoune.org
